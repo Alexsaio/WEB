@@ -1,0 +1,261 @@
+html, 
+body, 
+::after, 
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+    width: 100%;
+    display: block;
+    color: white;
+}
+.content {
+    background-color: #de2b24;
+    width: 100%;
+}
+.analysis {
+    background-color: #1287bf;
+}
+.newsletter {
+    background-color: #2a2a2a;
+}
+footer {
+    background-color: #515151;
+}
+.content-shell,
+.analysis-shell,
+.newsletter-shell {
+    width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+.content-shell {
+    padding: 109px 0px 130px 0px;
+}
+.analysis-shell {
+    padding: 105px 0px 113px 0px;
+}
+.newsletter-shell {
+    padding: 90px 0px 88px 0px;
+}
+.content-shell-title h2, 
+.analysis-shell-title h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0px;
+}
+.newsletter-shell-title h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0px 0px 30px 0px;
+}
+.content-shell-title p,
+.analysis-shell-title p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0px;
+}
+.content-shell-title {
+    position: relative;
+}
+.content-shell-title::after {
+    content: "";
+    position: relative;
+    transform-origin: center;
+    width: 40px;
+    height: 5px;
+    background: white;
+    display: block;
+    left: 48%;
+    right: 48%;
+    margin-top: 10px;
+}
+.content-shell-main {
+
+    margin-top: 50px;
+}
+.content-shell-main ul{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.content-shell-main ul li{
+    width: 256px;
+    height: 256px;
+    display: inline-block;
+    float: left;
+}
+.our-work-item {
+    background-color: #f35e59;
+    overflow: hidden;
+    height: 256px;
+    width: 256px;
+    align-items: center;
+    transition: 0.3s;
+    float: left;
+    clear: both;
+}
+.our-work-item-shell{
+    padding: calc(100%/3.5) 0px;
+}
+.newsletter-item {
+    display: inline-grid;
+    grid-auto-flow: column;
+    justify-self: center;
+    grid-gap: 15px;
+    margin: 0px 0px 36px 0px;
+}
+.newsletter-item a {
+    background-color: #2a2a2a;
+    overflow: hidden;
+    width: 52px;
+    height: 52px;
+    transition: 0.3s;
+    border: 2px solid #515151;
+    border-radius: 3px;
+}
+.newsletter-item a img{
+ margin: 15px;
+}
+.newsletter-item a:hover {
+    border: 2px solid #de2b24;
+}
+.our-work-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 40px rgba(00, 00, 00, .4);
+}
+.our-work-item h3 {
+    font-size: 24px;
+    margin: 10px 0px 0px 0px;
+}
+.our-work-item p {
+    margin: 0px;
+}
+.our-work-photo {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.analysis-item {
+    margin: 20px;
+}
+.analysis-form::before {
+    content: "";
+    position: absolute;
+    width: 0; 
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 20px solid white;
+    top:-20px;
+    left: 47%;
+    right: 47%;
+}
+.analysis-form {
+    padding: 50px 70px;
+    width: 683px;
+    align-items: center;
+    background-color: white;
+    color: #828282;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.analysis-form form {
+    width: 445px;
+    margin: 20px auto;
+}
+.analysis-form input[type=submit]{
+    margin-top: 30px;
+}
+input{
+    font-family: 'Roboto', sans-serif;
+}
+input[type=text],
+input[type=tel] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+    margin: 5px 0px;
+    transition: 0.3s;
+}
+input[type=text]:focus,
+input[type=tel]:focus,
+input[type=email]:focus {
+    border: 1px solid #1287bf;
+    box-shadow: 0px 0px 5px rgba(18, 135, 191, 0.7);
+}
+input[type=text]:hover,
+input[type=tel]:hover,
+input[type=submit]:hover,
+.close-btn:hover,
+input[type=email]:hover {
+    box-shadow: 0px 10px 40px rgba(00, 00, 00, .4);
+}
+input[type=submit]:hover,
+.close-btn:hover,
+input[type=email]:hover {
+    transform: scale(1.1);
+}
+.btn{
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+}
+.btn-red{
+    background: #de2b24;
+    color: white;
+    text-transform: uppercase;
+}
+.btn-border{
+    background: none;
+    color: white;
+    border: 2px solid #515151;
+}
+.close-btn {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    background: red;
+    border-radius: 50px;
+    border: 3px solid white;
+    color: white;
+    font-size: 22px;
+    font-style: normal;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 13px 20px;
+}
+.newsletter-text {
+    color: #515151;
+}
+.subscribe-form form {
+    width: 683px;
+    margin: 20px auto;
+}
+.subscribe-form input[type=email] {
+    color: white;
+    background-color: #515151;
+    border: none;
+    width: 100%;
+    padding: 20px;
+}
+.subscribe-form .btn {
+    margin: 30px;
+}
+footer p {
+    text-align: center;
+    width: 1024px;
+    margin: 0 auto;
+    padding: 15px;
+    color: #bdbdbd;
+    font-size: 15px;
+}
